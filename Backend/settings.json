@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "typescript", "json"],
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "files.autoSave": "onFocusChange",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Monokai"
+}
