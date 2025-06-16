@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './App.css';
 
 function App() {
   // State for transactions and form inputs
@@ -8,6 +9,8 @@ function App() {
   const [amount, setAmount] = useState('');
   const [type, setType] = useState('expense'); // default to expense
   const [category, setCategory] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
 
   // Fetch transactions from backend on component mount
 useEffect(() => {
@@ -40,9 +43,12 @@ useEffect(() => {
 
     // Simple validation
     if (!description || !amount || !category) {
-      alert('Please fill out all fields');
-      return;
-    }
+  setErrorMessage('Please fill out all fields');
+  return;
+} else {
+  setErrorMessage('');
+}
+
 
     const newTransaction = {
       description,
@@ -73,10 +79,17 @@ useEffect(() => {
 };
 
   return (
-    <div style={{ padding: '20px', maxWidth: 600, margin: 'auto' }}>
+    <div className="App">
       <h1>Personal Finance Dashboard</h1>
 
       <h2>Add Transaction</h2>
+
+      {errorMessage && (
+      <div role="alert" style={{ color: '#DC2626', marginBottom: '1rem' }}>
+        ⚠️ {errorMessage}
+      </div>
+    )}
+    
       <form onSubmit={handleAddTransaction} style={{ marginBottom: '2rem' }}>
         <div>
           <label>Description: </label><br />
