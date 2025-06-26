@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.validate": ["javascript", "javascriptreact", "typescriptreact"],
+  "files.exclude": {
+    "**/.env": true,
+    "**/node_modules": true,
+    "**/build": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "editor.tabSize": 2,
+  "files.autoSave": "onFocusChange",
+  "workbench.colorTheme": "Night Owl"
+}
