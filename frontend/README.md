@@ -1,16 +1,22 @@
 # 💰 Personal Finance Dashboard
 
-An interactive React application designed to help users track expenses, budgets, and visualize spending trends in a clear and responsive dashboard.
+An interactive React application designed to help users visualize, track, and manage their expenses and budgets through responsive, user-friendly charts and workflows.
 
 ---
 
 ## ✨ Features
 
-- 📊 Dynamic charts and visualizations for spending and budget tracking  
-- 🛠️ Responsive design with Tailwind CSS for seamless experience on all devices  
-- 🗂️ Real-time filtering and categorization of expenses  
-- 🧪 Unit testing with Jest and React Testing Library  
-- ⚙️ ESLint and Prettier configured for consistent code quality  
+- 📊 Dynamic charts and spending breakdowns with Chart.js and Recharts
+
+🧰 Modular UI components with React and Tailwind CSS
+
+🧪 Unit testing setup using Jest and React Testing Library
+
+🗂️ Data filtering and categorization
+
+💡 Optimized for performance and responsive design across all devices
+
+🔧 Code quality ensured with ESLint and Prettier
 
 ---
 
@@ -36,35 +42,57 @@ npm install
 # Start development server
 npm start
 
-📂 Project Structure
-bash
-Copy
-Edit
-src/
-│
-├── components/       # Reusable components (Navbar, Charts, etc.)
-├── pages/            # Page-level components
-├── utils/            # Utility functions
-├── data/             # Mock data or API simulation
-├── App.js            # Root component
-└── index.js          # App entry point
-
-🌱 Future Enhancements
-🔐 Secure login functionality
-
-💾 Backend integration with Firebase or Supabase
-
-📱 Mobile-first dashboard layout
-
-🔍 Expense search and filtering
-
-📈 Forecasting tools with machine learning
-
 🧪 Testing
 npm run test
 
+📦 Build
+npm run build
+
+🚀 Deployment /* Deployment is managed via GitHub Pages using the gh-pages package. */
+
+Manual Deploy
+npm run deploy
+Behind the scenes, this script:
+Runs npm run build to generate production files
+Publishes the contents of /build to the gh-pages branch via gh-pages
+
+Hosting
+Hosted at:
+🔗 https://SummerJyl.github.io/personal-finance-dashboard
+
+
+📂 Project Structure
+bash
+
+personal-finance-dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── styles/
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+├── README.md
+└── deploy.sh
+
+
+🌱 Future Enhancements
+🔐 Secure login functionality
+💾 Backend integration with Firebase or Supabase
+📱 Mobile-first dashboard layout
+🔍 Expense search and filtering
+📈 Forecasting tools with machine learning
+🗒️ Add user login and account-specific budget tracking
+🗒️ Connect to a backend API for persistent data
+🗒️ Dark mode toggle
+🗒️ Exportable CSV reports
+
+
 🧑‍💻 Author
-Built with ❤️ by Jylian Summers
+Jylian Summers
+📫 LinkedIn | GitHub
 
 📄 License
 This project is open source and available under the MIT License.
