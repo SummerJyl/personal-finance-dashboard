@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/personal-finance-dashboard/static/css/main.75785d42.css",
+    "main.js": "/personal-finance-dashboard/static/js/main.29baf6aa.js",
+    "static/js/453.8ab44547.chunk.js": "/personal-finance-dashboard/static/js/453.8ab44547.chunk.js",
+    "index.html": "/personal-finance-dashboard/index.html",
+    "main.75785d42.css.map": "/personal-finance-dashboard/static/css/main.75785d42.css.map",
+    "main.29baf6aa.js.map": "/personal-finance-dashboard/static/js/main.29baf6aa.js.map",
+    "453.8ab44547.chunk.js.map": "/personal-finance-dashboard/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75785d42.css",
+    "static/js/main.29baf6aa.js"
+  ]
+}
